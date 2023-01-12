@@ -16,3 +16,5 @@ systemctl start catalogue
 
 cp ${set_location}/files/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
+
+mongo --host 3.82.205.152 </app/schema/catalogue.js
