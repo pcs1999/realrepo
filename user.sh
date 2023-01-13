@@ -12,5 +12,6 @@ cp ${set_location}/files/user.service /etc/systemd/system/user.service
 systemctl daemon-reload
 systemctl enable user 
 systemctl start user
-yum install mongodb-org-shell -y
 cp ${set_location}/files/mongo.repo /etc/yum.repos.d/mongo.repo
+yum install mongodb-org-shell -y
+mongo --host 172.31.83.92 </app/schema/user.js
