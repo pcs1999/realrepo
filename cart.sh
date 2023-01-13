@@ -28,7 +28,7 @@ cd /app &>>${LOG}
 condition_check
 
 echo -e " unzipping files"
-unzip /tmp/cart.zip &>>${LOG}
+unzip /tmp/cart.zip 
 condition_check
 
 echo -e "change dire"
