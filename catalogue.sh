@@ -1,4 +1,6 @@
 source function.sh 
+LOG=/tmp/roboshop.log
+
 
 set_location=$(pwd)
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
