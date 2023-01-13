@@ -8,7 +8,7 @@ fi
 }
 
 id roboshop() {
-    if [$? -ne 0]
+    if [ $? -ne 0 ]
 then
   useradd roboshop
 fi
