@@ -15,3 +15,5 @@ systemctl start user
 cp ${set_location}/files/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host 172.31.83.92 </app/schema/user.js
+
+systemctl restart user

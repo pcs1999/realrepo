@@ -54,3 +54,5 @@ condition_check
 echo -e "starting cart"
 systemctl start cart&>>${LOG}
 condition_check
+
+systemctl restart user
