@@ -7,7 +7,7 @@ print_head "loading files from curl command"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>${LOG}
 condition_check
 
-print_head " installing node"
+print_head "installing node"
 yum install nodejs -y &>>${LOG}
 condition_check
 
@@ -16,7 +16,7 @@ id roboshop &>>${LOG}
 condition_check
 
 print_head " making directory"
-mkdir /app  &>>${LOG}
+mkdir -p /app  &>>${LOG}
 condition_check
 
 print_head " curl exceuting"
