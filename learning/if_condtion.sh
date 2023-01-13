@@ -1,5 +1,4 @@
 a=10
 if [$a eq 10]
 then
- echo is 10
- 
+ echo a is 10
