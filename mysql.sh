@@ -1,9 +1,12 @@
 source function.sh
+LOG=/tmp/roboshop.log
 
-if [ -z "${mysql_password_}"]; then
+
+if [ -z "${mysql_password_}" ]; then
   echo "root_mysql_password_is_missing"
   exit 
 fi 
+
 print_head "dnf module"
 dnf module disable mysql -y &>>${LOG}
 condition_check
