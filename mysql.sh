@@ -1,5 +1,7 @@
 source function.sh
+set_location=$(pwd)
 LOG=/tmp/roboshop.log
+
 
 
 if [ -z "${mysql_password_}" ]; then
