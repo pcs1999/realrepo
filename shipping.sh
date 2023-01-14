@@ -58,3 +58,5 @@ condition_check
 print_head "restart"
 systemctl restart shipping &>>${LOG}
 condition_check
+
+mysql -h 3.94.9.100 -uroot -pRoboShop@1 < /app/schema/shipping.sql 
